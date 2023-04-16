@@ -131,7 +131,7 @@ export default function Home() {
       </Box>
       <Box
         className="background-white"
-        id="result"
+        id="results"
       >
         <Container
           sx={{ padding: "158px 0px  115px" }}
