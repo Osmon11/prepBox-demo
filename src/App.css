@@ -1,0 +1,328 @@
+html,
+body {
+  background-color: #ffffff;
+}
+a {
+  width: fit-content;
+  text-decoration: none;
+}
+
+.tablet-section {
+  width: 100vw;
+  max-width: 100%;
+  /* minus header height and bottom white line */
+  height: calc(100vh - 120px);
+  max-height: 100%;
+  position: relative;
+}
+.full-screen {
+  width: 100vw;
+  max-width: 100%;
+  height: 100vh;
+  max-height: 100%;
+}
+.full-width {
+  width: 100%;
+}
+.full-height {
+  height: 100%;
+}
+.flex {
+  display: flex !important;
+}
+.flex-center {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+.align-center {
+  align-items: center;
+}
+.align-top {
+  align-items: flex-start;
+}
+.align-stretch {
+  align-items: stretch;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.gap-5 {
+  gap: 5px;
+}
+.gap-9 {
+  gap: 9px;
+}
+.gap-10 {
+  gap: 10px;
+}
+.gap-16 {
+  gap: 16px;
+}
+.gap-20 {
+  gap: 20px;
+}
+.gap-25 {
+  gap: 25px;
+}
+.gap-100 {
+  gap: 100px;
+}
+.tablet_image {
+  width: 60%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.list-item-text {
+  color: rgba(255, 255, 255, 0.74);
+}
+.university-logo {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.testimonials-section {
+  position: relative;
+}
+.cellular-background {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.learnByDoing-text {
+  width: 50%;
+  position: absolute;
+  bottom: 55px;
+  left: 105px;
+}
+.double-quotes-outlined {
+  position: absolute;
+  top: -110%;
+  left: 10%;
+}
+.accordion-media {
+  height: calc(100% - 172px);
+  position: absolute;
+  top: 150px;
+  right: 0;
+}
+.accordion-box {
+  position: relative;
+}
+.our-product-in-action-cover {
+  width: 100%;
+  margin-top: 80px;
+}
+.tutor-card .tutor-image {
+  width: 310px;
+  height: 342px;
+  border-radius: 40px;
+}
+.cellular-background-v2 {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.footer {
+  background: linear-gradient(
+      0deg,
+      #4098f9,
+      #4098f9
+    ),
+    #263238;
+}
+.secial-media-icon {
+  width: 32px;
+  height: 32px;
+  padding: 8px;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+}
+.secial-media-icon:hover {
+  background: #ff0000;
+}
+.social-media-img {
+  width: 24px;
+  height: 24px;
+}
+.footer-nav-link-box {
+  width: 50%;
+}
+.underline {
+  text-decoration: underline;
+}
+.scroll-top-box {
+  z-index: 10;
+}
+.back-to-top-anchor {
+  width: 0px;
+  height: 0px;
+}
+
+/* @@@ ---------------------------------------------------------- @@@ */
+
+.MuiButton-root.rounded-button {
+  width: 285px;
+  height: 57px;
+  border-radius: 40px;
+}
+.MuiTab-root.header {
+  font-size: 0.95rem;
+}
+.MuiTypography-root.MuiTypography-body1.achievement {
+  font-size: 1.13rem;
+  line-height: 32px;
+  color: #263238;
+  opacity: 0.7;
+}
+.MuiTypography-root.MuiTypography-body1.university-name {
+  font-size: 2.25rem;
+  line-height: 46px;
+  color: #121217;
+}
+.MuiTypography-root.MuiTypography-body1.student-description {
+  font-size: 1.13rem;
+  color: rgba(38, 50, 56, 0.7);
+}
+.MuiTypography-root.text-black {
+  color: #000000;
+}
+.MuiTypography-root.text-white {
+  color: #ffffff;
+}
+.MuiPaper-root.student-box {
+  height: 365px;
+  position: relative;
+  padding: 36px 40px;
+  border-radius: 8px;
+}
+.background-blue,
+.MuiPaper-root.background-blue {
+  background: #4098f9;
+}
+.background-gray,
+.MuiPaper-root.background-gray {
+  background: #f7f7f8;
+}
+.background-white,
+.MuiPaper-root.background-white {
+  background: #ffffff;
+}
+.MuiPaper-root.testimonial-card {
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.1);
+}
+.MuiAvatar-root.avatar {
+  width: 50px;
+  height: 50px;
+}
+.MuiTypography-root.uppercase {
+  text-transform: uppercase;
+}
+.MuiPaper-root.pricing-card {
+  width: 33%;
+  padding: 40px 30px;
+  box-shadow: 0px 4px 34px rgba(0, 0, 0, 0.08);
+  border-radius: 24px;
+}
+.MuiPaper-root.pricing-card:hover {
+  box-shadow: 0px 4px 34px rgba(0, 0, 0, 0.16);
+}
+.MuiListItemIcon-root.pricing-check-icon {
+  color: rgba(38, 50, 56, 0.5);
+}
+.MuiListItemIcon-root.pricing-check-icon.active {
+  color: #4098f9;
+}
+.MuiListItemText-root.pricing-list-text {
+  color: rgba(38, 50, 56, 0.5);
+}
+.MuiListItemText-root.pricing-list-text.active {
+  color: #263238;
+}
+.MuiButton-root.pricing-button {
+  width: 100%;
+  height: 40px;
+  background: linear-gradient(
+      0deg,
+      #f6f6f6,
+      #f6f6f6
+    ),
+    #263238;
+  border-radius: 30px;
+}
+.MuiButton-root.pricing-button:hover {
+  background: linear-gradient(
+      0deg,
+      #4098f9,
+      #4098f9
+    ),
+    #f7f7f7;
+}
+.MuiButton-root.pricing-button
+  .MuiTypography-root.MuiTypography-body1 {
+  color: #263238;
+}
+.MuiButton-root.pricing-button:hover
+  .MuiTypography-root.MuiTypography-body1 {
+  color: #ffffff;
+}
+.MuiPaper-root.session-times-box {
+  width: 100%;
+  height: 260px;
+  position: absolute;
+  top: -130px;
+  z-index: 1;
+  background: linear-gradient(
+      272.79deg,
+      rgba(255, 255, 255, 0) -0.01%,
+      rgba(255, 255, 255, 0.45) 99.91%
+    ),
+    #4098f9;
+  box-shadow: 0px 12px 32px rgba(44, 21, 52, 0.24);
+  border-radius: 8px;
+}
+.MuiButton-root.contact-button {
+  color: #8d9397;
+  border: 1px solid rgba(38, 50, 56, 0.15);
+  border-radius: 9.6px;
+}
+.MuiButton-root.contact-button:hover {
+  border: 1px solid rgba(38, 50, 56, 0.15);
+}
+.MuiPaper-root.get-in-touch-box {
+  padding: 33px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+}
+.MuiButton-root.schedule-button {
+  padding: 13px 25px;
+  color: #263238;
+  line-height: 27px;
+  background: #ffffff;
+  border: 1px solid #d8d5d1;
+  border-radius: 9.6px;
+}
+.MuiButton-root.schedule-button:hover {
+  background: #ffffff;
+  border: 1px solid #d8d5d1;
+}
+.MuiFab-root.scroll-back-to-top {
+  color: #ffffff;
+  background: #4098f9;
+}
+.MuiFab-root.scroll-back-to-top:hover {
+  background: #4098f9;
+}
