@@ -7,6 +7,10 @@ a {
   text-decoration: none;
 }
 
+#team {
+  overflow: hidden;
+}
+
 .tablet-section {
   width: 100vw;
   max-width: 100%;
@@ -14,6 +18,7 @@ a {
   height: calc(100vh - 120px);
   max-height: 100%;
   position: relative;
+  overflow: hidden;
 }
 .full-screen {
   width: 100vw;
@@ -125,6 +130,15 @@ a {
   width: 310px;
   height: 342px;
   border-radius: 40px;
+}
+.wrapper-cellular-background-v2 {
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
 }
 .cellular-background-v2 {
   width: 100%;
@@ -325,4 +339,11 @@ a {
 }
 .MuiFab-root.scroll-back-to-top:hover {
   background: #4098f9;
+}
+
+@media (min-width: 1200px) {
+  .accordion-media {
+    right: calc(50% - 1200px);
+    transform: translateX(-50%);
+  }
 }

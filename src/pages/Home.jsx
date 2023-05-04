@@ -817,11 +817,13 @@ export default function Home() {
               </Button>
             </Box>
           </Box>
-          <img
-            className="cellular-background-v2"
-            src={cellularBackgroundV2}
-            alt="cellular background v2"
-          />
+          <Box className="wrapper-cellular-background-v2">
+            <img
+              className="cellular-background-v2"
+              src={cellularBackgroundV2}
+              alt="cellular background v2"
+            />
+          </Box>
         </Container>
       </Box>
       <Footer />
