@@ -5,7 +5,7 @@ import {
 import { RouterProvider } from "react-router-dom";
 
 import router from "libs/router";
-import prepBoxTheme from "libs/prep-box-theme.js";
+import prepBoxTheme from "utils/prep-box-theme.js";
 
 import "./App.css";
 
