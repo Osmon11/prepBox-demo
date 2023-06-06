@@ -1,5 +1,7 @@
 # PrepBox landing-page demo (freelance)
 
+Only desktop desing
+
 [See demo](https://prepbox-demo.web.app)
 
 # Getting Started with Create React App

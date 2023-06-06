@@ -40,6 +40,7 @@ import {
 import Footer from "components/Footer";
 
 import homeData from "utils/home-data.js";
+import tabIndex from "utils/tab-index";
 
 export default function Home() {
   const [
@@ -112,6 +113,11 @@ export default function Home() {
               sx={{
                 marginTop: "42px",
               }}
+              tabIndex={
+                tabIndex[
+                  "tab-74eac510-cd8f-4c9d-8371-9df825dcf24f"
+                ]
+              }
               variant="contained"
               disableElevation
             >
@@ -374,7 +380,11 @@ export default function Home() {
                       }
                       sx={{ width: "50%" }}
                     >
-                      <HowDoesItWorkAccordionSummary>
+                      <HowDoesItWorkAccordionSummary
+                        tabIndex={
+                          tabIndex[item.tabIndex]
+                        }
+                      >
                         <Box className="flex align-center">
                           <Typography
                             variant="body2"
@@ -595,91 +605,103 @@ export default function Home() {
               className="full-width flex align-center justify-center gap-9"
               sx={{ marginTop: "60px" }}
             >
-              {homeData.pricing.map((pricing) => (
-                <Paper
-                  className="pricing-card"
-                  elevation={0}
-                  key={pricing.name}
-                >
-                  <Typography
-                    color="#263238"
-                    fontWeight={700}
-                    variant="h4"
-                  >
-                    {pricing.name}
-                  </Typography>
-                  <Typography
-                    color="#263238"
-                    fontWeight={500}
-                    variant="body1"
-                    sx={{ marginTop: "2rem" }}
-                  >
-                    {pricing.sessionLimit}
-                  </Typography>
-                  <Typography
-                    color="#4098F9"
-                    fontWeight={600}
-                    variant="h4"
-                    sx={{ marginTop: "3rem" }}
-                  >
-                    {pricing.costPerMonth}
-                  </Typography>
-                  <List
-                    dense
-                    sx={{ marginTop: "5rem" }}
-                  >
-                    {pricing.checkList.map(
-                      (item, checkListIndex) => (
-                        <ListItem
-                          className={`pricing-check-list-item ${
-                            item.included
-                              ? "active"
-                              : ""
-                          }`}
-                          key={
-                            pricing.name +
-                            checkListIndex
-                          }
-                          sx={{ paddingLeft: 0 }}
-                        >
-                          <ListItemIcon
-                            className={`pricing-check-icon ${
-                              item.included
-                                ? "active"
-                                : ""
-                            }`}
-                            sx={{ minWidth: 34 }}
-                          >
-                            <TaskAltIcon />
-                          </ListItemIcon>
-                          <ListItemText
-                            className={`pricing-list-text ${
-                              item.included
-                                ? "active"
-                                : ""
-                            }`}
-                            primary={item.text}
-                            primaryTypographyProps={{
-                              variant: "body1",
-                            }}
-                          />
-                        </ListItem>
-                      )
-                    )}
-                  </List>
-                  <Button
-                    className="pricing-button"
-                    sx={{ marginTop: "5rem" }}
+              {homeData.pricing.map(
+                (pricing, index) => (
+                  <Paper
+                    className="pricing-card"
+                    elevation={0}
+                    key={pricing.name}
                   >
                     <Typography
-                      variant="body1"
-                      fontWeight={600}
+                      color="#263238"
+                      fontWeight={700}
+                      variant="h4"
                     >
-                      Book Assessment
+                      {pricing.name}
                     </Typography>
-                  </Button>
-                </Paper>
-              ))}
+                    <Typography
+                      color="#263238"
+                      fontWeight={500}
+                      variant="body1"
+                      sx={{ marginTop: "2rem" }}
+                    >
+                      {pricing.sessionLimit}
+                    </Typography>
+                    <Typography
+                      color="#4098F9"
+                      fontWeight={600}
+                      variant="h4"
+                      sx={{ marginTop: "3rem" }}
+                    >
+                      {pricing.costPerMonth}
+                    </Typography>
+                    <List
+                      dense
+                      sx={{ marginTop: "5rem" }}
+                    >
+                      {pricing.checkList.map(
+                        (
+                          item,
+                          checkListIndex
+                        ) => (
+                          <ListItem
+                            className={`pricing-check-list-item ${
+                              item.included
+                                ? "active"
+                                : ""
+                            }`}
+                            key={
+                              pricing.name +
+                              checkListIndex
+                            }
+                            sx={{
+                              paddingLeft: 0,
+                            }}
+                          >
+                            <ListItemIcon
+                              className={`pricing-check-icon ${
+                                item.included
+                                  ? "active"
+                                  : ""
+                              }`}
+                              sx={{
+                                minWidth: 34,
+                              }}
+                            >
+                              <TaskAltIcon />
+                            </ListItemIcon>
+                            <ListItemText
+                              className={`pricing-list-text ${
+                                item.included
+                                  ? "active"
+                                  : ""
+                              }`}
+                              primary={item.text}
+                              primaryTypographyProps={{
+                                variant: "body1",
+                              }}
+                            />
+                          </ListItem>
+                        )
+                      )}
+                    </List>
+                    <Button
+                      className="pricing-button"
+                      sx={{ marginTop: "5rem" }}
+                      tabIndex={
+                        tabIndex[pricing.tabIndex]
+                      }
+                    >
+                      <Typography
+                        variant="body1"
+                        fontWeight={600}
+                      >
+                        Book Assessment
+                      </Typography>
+                    </Button>
+                  </Paper>
+                )
+              )}
             </Box>
           </Box>
         </Container>
@@ -767,7 +789,11 @@ export default function Home() {
                   sx={{ marginTop: "14px" }}
                   key={item.quession}
                 >
-                  <FAQAccordionSummary>
+                  <FAQAccordionSummary
+                    tabIndex={
+                      tabIndex[item.tabIndex]
+                    }
+                  >
                     <Typography
                       className="text-black"
                       variant="h6"
@@ -812,6 +838,11 @@ export default function Home() {
                 sx={{
                   marginTop: "35px",
                 }}
+                tabIndex={
+                  tabIndex[
+                    "tab-c439bf24-4cfa-4b78-bd7c-5d479b2180f8"
+                  ]
+                }
               >
                 Contact
               </Button>

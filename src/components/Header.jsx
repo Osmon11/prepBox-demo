@@ -21,10 +21,11 @@ import logo from "assets/logo.svg";
 import ScrollTop from "components/ScrollTop";
 
 import homeData from "utils/home-data";
+import tabIndex from "utils/tab-index";
 import { useAnchorNavigationClick } from "utils/useAnchorNavigationClick";
 
 export default function Header(props) {
-  const [tabIndex, setTabIndex] = useState(0);
+  const [tab, setTab] = useState(0);
   const anchorNavigation =
     useAnchorNavigationClick();
   const navigate = useNavigate();
@@ -36,12 +37,12 @@ export default function Header(props) {
         (item) => item.link === location.hash
       );
     if (newTabIndex >= 0) {
-      setTabIndex(newTabIndex);
+      setTab(newTabIndex);
     }
   }, [location]);
 
   function navigateTo(event, newValue) {
-    setTabIndex(newValue);
+    setTab(newValue);
     navigate(
       homeData.headerNavigation[newValue].link
     );
@@ -67,7 +68,7 @@ export default function Header(props) {
           />
           <Box width="100%">
             <Tabs
-              value={tabIndex}
+              value={tab}
               onChange={navigateTo}
               centered
             >
@@ -76,6 +77,9 @@ export default function Header(props) {
                   <Tab
                     className="header"
                     label={section.text}
+                    tabIndex={
+                      tabIndex[section.tabIndex]
+                    }
                     key={section.link}
                   />
                 )
@@ -89,6 +93,11 @@ export default function Header(props) {
           className="scroll-back-to-top"
           size="small"
           aria-label="scroll back to top"
+          tabIndex={
+            tabIndex[
+              "tab-8011162b-4017-4b29-9acd-36f556ee2641"
+            ]
+          }
         >
           <KeyboardArrowUpIcon />
         </Fab>

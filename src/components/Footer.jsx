@@ -14,6 +14,7 @@ import copyCircular from "assets/copy-circular.svg";
 import logoV2 from "assets/logo-v2.svg";
 
 import homeData from "utils/home-data";
+import tabIndex from "utils/tab-index";
 import { useAnchorNavigationClick } from "utils/useAnchorNavigationClick";
 
 export default function Footer() {
@@ -54,7 +55,14 @@ export default function Footer() {
               </Typography>
             </Box>
           </Box>
-          <Button className="schedule-button">
+          <Button
+            className="schedule-button"
+            tabIndex={
+              tabIndex[
+                "tab-6ba5a5b7-3192-4d8c-94d5-f3844d2c9a1b"
+              ]
+            }
+          >
             Schedule assessment
           </Button>
         </Paper>
@@ -94,6 +102,10 @@ export default function Footer() {
                 (icon, index) => (
                   <Box
                     className="secial-media-icon flex-center"
+                    component="button"
+                    tabIndex={
+                      tabIndex[icon.tabIndex]
+                    }
                     key={`socialMediaIcon-${index}`}
                   >
                     <img
@@ -116,7 +128,12 @@ export default function Footer() {
                   className="footer-nav-link-box"
                   key={nav.link + index}
                 >
-                  <Link to={nav.link}>
+                  <Link
+                    to={nav.link}
+                    tabIndex={
+                      tabIndex[nav.tabIndex]
+                    }
+                  >
                     <Typography
                       color="rgba(255, 255, 255, 0.84)"
                       variant="body1"
@@ -151,7 +168,14 @@ export default function Footer() {
             Reserved
           </Typography>
           <Box className="flex align-center gap-16">
-            <Link to="#">
+            <Link
+              to="#"
+              tabIndex={
+                tabIndex[
+                  "tab-0521213f-b157-4a7d-82a6-0881fdd0aef4"
+                ]
+              }
+            >
               <Typography
                 className="underline"
                 color="rgba(255, 255, 255, 0.9)"
@@ -160,7 +184,14 @@ export default function Footer() {
                 Privacy Policy
               </Typography>
             </Link>
-            <Link to="#">
+            <Link
+              to="#"
+              tabIndex={
+                tabIndex[
+                  "tab-4deb88fc-f7c5-4ec1-a359-1a23e85098d9"
+                ]
+              }
+            >
               <Typography
                 className="underline"
                 color="rgba(255, 255, 255, 0.9)"
