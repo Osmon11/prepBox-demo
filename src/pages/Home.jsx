@@ -133,6 +133,7 @@ export default function Home() {
           className="tablet_image"
           src={tabletImage}
           alt="tablet"
+          loading="lazy"
         />
       </Box>
       <Box
@@ -215,6 +216,7 @@ export default function Home() {
                         student["university-logo"]
                       }
                       alt={student.university}
+                      loading="lazy"
                     />
                   </Paper>
                 </Grid>
@@ -275,6 +277,7 @@ export default function Home() {
                         <img
                           src={doubleQuotes}
                           alt="double quotes"
+                          loading="lazy"
                         />
                         <Typography
                           variant="body1"
@@ -310,11 +313,13 @@ export default function Home() {
           className="cellular-background"
           src={cellularBackground}
           alt="cellular background"
+          loading="lazy"
         />
         <img
           className="learnByDoing-text"
           src={learnByDoingText}
           alt="learn by doing text"
+          loading="lazy"
         />
       </Box>
       <Box className="background-white">
@@ -342,7 +347,8 @@ export default function Home() {
               <img
                 className="double-quotes-outlined"
                 src={doubleQuotesOutlined}
-                alt=""
+                alt="double quotes outlined"
+                loading="lazy"
               />
             </Typography>
           </Box>
@@ -434,6 +440,7 @@ export default function Home() {
                       className="accordion-media"
                       src={item.image}
                       alt={item.title}
+                      loading="lazy"
                     />
                   </React.Fragment>
                 )
@@ -462,6 +469,7 @@ export default function Home() {
               className="our-product-in-action-cover"
               src={ourProductInAction}
               alt="Our product in action"
+              loading="lazy"
             />
           </Box>
         </Container>
@@ -508,7 +516,8 @@ export default function Home() {
                   <img
                     className="tutor-image"
                     src={tutor.image}
-                    alt=""
+                    alt={tutor.name}
+                    loading="lazy"
                   />
                   <Typography
                     color="#263238"
@@ -569,6 +578,7 @@ export default function Home() {
             className="cellular-background-v2"
             src={cellularBackgroundV2}
             alt="cellular background v2"
+            loading="lazy"
           />
         </Container>
       </Box>
@@ -853,6 +863,7 @@ export default function Home() {
               className="cellular-background-v2"
               src={cellularBackgroundV2}
               alt="cellular background v2"
+              loading="lazy"
             />
           </Box>
         </Container>

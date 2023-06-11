@@ -36,6 +36,7 @@ export default function Footer() {
             <img
               src={copyCircular}
               alt="copy circular icon"
+              loading="lazy"
             />
             <Box>
               <Typography
@@ -75,6 +76,7 @@ export default function Footer() {
               className="logo-v2"
               src={logoV2}
               alt="prep box logo version 2"
+              loading="lazy"
             />
             <Typography
               color="#F1F0EE"
@@ -112,6 +114,7 @@ export default function Footer() {
                       className="social-media-img"
                       src={icon.src}
                       alt={icon.alt}
+                      loading="lazy"
                     />
                   </Box>
                 )

@@ -65,6 +65,7 @@ export default function Header(props) {
           <img
             src={logo}
             alt="prep box"
+            loading="lazy"
           />
           <Box width="100%">
             <Tabs
